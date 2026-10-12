@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conecta Comunidade: oportunidades de emprego e cursos gratuitos.">
+  <title>Conecta Comunidade | Empregos e cursos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="Conecta Comunidade - início">
+        <span class="brand-mark" aria-hidden="true">CC</span>
+        <span>Conecta <strong>Comunidade</strong></span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="#vagas">Vagas</a>
+        <a href="#cursos">Cursos gratuitos</a>
+        <a href="#sobre">Sobre o projeto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">OPORTUNIDADES PERTO DE VOCÊ</p>
+          <h1>Seu próximo passo começa <span>aqui.</span></h1>
+          <p class="hero-text">Encontre oportunidades de emprego e cursos gratuitos para desenvolver suas habilidades e abrir novos caminhos.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#vagas">Encontrar vagas</a>
+            <a class="button button-secondary" href="#cursos">Explorar cursos</a>
+          </div>
+          <p class="notice">Projeto acadêmico comunitário. Os links direcionam a plataformas externas. Não são anúncios de vagas específicas.</p>
+        </div>
+        <div class="hero-art" aria-label="Ilustração de oportunidades e crescimento" role="img">
+          <div class="art-circle circle-one"></div><div class="art-circle circle-two"></div>
+          <div class="art-card card-top"><span class="art-icon">✓</span><div><strong>Novas possibilidades</strong><small>Um passo de cada vez</small></div></div>
+          <div class="art-card card-main"><div class="chart-bars"><i></i><i></i><i></i><i></i><i></i></div><strong>Aprender • Crescer • Conectar</strong><small>Conhecimento abre portas</small></div>
+          <div class="art-card card-bottom"><span class="people-icon">↗</span><div><strong>Oportunidades</strong><small>Para sua jornada</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-section" aria-label="Pesquisar oportunidades">
+      <div class="container search-panel">
+        <div class="search-heading"><span class="search-symbol" aria-hidden="true">⌕</span><div><h2>O que você está procurando?</h2><p>Pesquise plataformas de vagas, estágios e cursos gratuitos.</p></div></div>
+        <label class="sr-only" for="searchInput">Buscar por palavra-chave</label>
+        <input id="searchInput" type="search" placeholder="Ex.: atendimento, informática, Excel">
+        <label class="sr-only" for="typeFilter">Filtrar por tipo</label>
+        <select id="typeFilter">
+          <option value="todos">Todas as oportunidades</option>
+          <option value="vaga">Empregos</option>
+          <option value="curso">Cursos gratuitos</option>
+        </select>
+        <button class="button button-primary search-button" id="searchButton" type="button">Buscar</button>
+      </div>
+    </section>
+
+    <section class="content-section" id="vagas">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">COMECE SUA BUSCA</p><h2>Oportunidades de emprego</h2><p>Plataformas para pesquisar empregos, estágios e aprendizagem. A disponibilidade varia conforme a região e o perfil.</p></div>
+          <span class="section-count" id="jobsCount">3 plataformas</span>
+        </div>
+        <div class="cards-grid" id="jobsList">
+          <article class="opportunity-card" data-type="vaga" data-search="sine emprego brasil carteira trabalho vagas">
+            <div class="card-topline"><span class="tag tag-job">Plataforma de vagas</span><span class="card-symbol" aria-hidden="true">↗</span></div>
+            <h3>SINE — Emprega Brasil</h3><p class="card-description">Pesquise vagas de emprego por região e perfil no serviço público de intermediação de mão de obra.</p>
+            <ul class="details"><li><span>Disponibilidade</span><strong>Consulte o portal</strong></li><li><span>Inscrição</span><strong>Site externo</strong></li></ul>
+            <div class="card-footer"><span class="source-label">Plataforma externa</span><a class="text-link" href="https://www.gov.br/pt-br/servicos/buscar-emprego-no-sistema-nacional-de-emprego-sine" target="_blank" rel="noopener noreferrer">Consultar SINE <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="opportunity-card" data-type="vaga" data-search="ciee estagio jovem aprendiz aprendizagem estudantes">
+            <div class="card-topline"><span class="tag tag-job">Plataforma de vagas</span><span class="card-symbol" aria-hidden="true">↗</span></div>
+            <h3>CIEE — Estágios e aprendizagem</h3><p class="card-description">Encontre informações sobre oportunidades de estágio e aprendizagem e confira os critérios de participação.</p>
+            <ul class="details"><li><span>Disponibilidade</span><strong>Consulte o portal</strong></li><li><span>Inscrição</span><strong>Site externo</strong></li></ul>
+            <div class="card-footer"><span class="source-label">Plataforma externa</span><a class="text-link" href="https://portal.ciee.org.br/" target="_blank" rel="noopener noreferrer">Acessar CIEE <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="opportunity-card" data-type="vaga" data-search="gupy vagas empresas processos seletivos emprego">
+            <div class="card-topline"><span class="tag tag-job">Plataforma de vagas</span><span class="card-symbol" aria-hidden="true">↗</span></div>
+            <h3>Gupy — Vagas em empresas</h3><p class="card-description">Explore páginas de carreiras e processos seletivos de empresas de diferentes áreas.</p>
+            <ul class="details"><li><span>Disponibilidade</span><strong>Consulte o portal</strong></li><li><span>Inscrição</span><strong>Site externo</strong></li></ul>
+            <div class="card-footer"><span class="source-label">Plataforma externa</span><a class="text-link" href="https://portal.gupy.io/" target="_blank" rel="noopener noreferrer">Pesquisar na Gupy <span aria-hidden="true">→</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section courses-section" id="cursos">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">APRENDA SEM CUSTO</p><h2>Cursos gratuitos</h2><p>Plataformas de cursos gratuitos. Confira as opções disponíveis, requisitos e condições em cada site.</p></div>
+          <span class="section-count" id="coursesCount">2 plataformas</span>
+        </div>
+        <div class="cards-grid" id="coursesList">
+          <article class="opportunity-card course-card" data-type="curso" data-search="fundação bradesco escola virtual cursos gratuitos informatica excel tecnologia">
+            <div class="card-topline"><span class="tag tag-course">Curso gratuito</span><span class="card-symbol" aria-hidden="true">↗</span></div>
+            <h3>Fundação Bradesco — Escola Virtual</h3><p class="card-description">Consulte cursos on-line gratuitos em áreas como tecnologia, produtividade e desenvolvimento profissional.</p>
+            <ul class="details"><li><span>Disponibilidade</span><strong>Consulte o portal</strong></li><li><span>Inscrição</span><strong>Site externo</strong></li></ul>
+            <div class="card-footer"><span class="source-label">Plataforma externa</span><a class="text-link" href="https://www.ev.org.br/" target="_blank" rel="noopener noreferrer">Ver cursos da Fundação Bradesco <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="opportunity-card course-card" data-type="curso" data-search="escola do trabalhador 4.0 cursos gratuitos tecnologia digital">
+            <div class="card-topline"><span class="tag tag-course">Curso gratuito</span><span class="card-symbol" aria-hidden="true">↗</span></div>
+            <h3>Escola do Trabalhador 4.0</h3><p class="card-description">Conheça trilhas de capacitação digital gratuitas e confira os requisitos no portal.</p>
+            <ul class="details"><li><span>Disponibilidade</span><strong>Consulte o portal</strong></li><li><span>Inscrição</span><strong>Site externo</strong></li></ul>
+            <div class="card-footer"><span class="source-label">Plataforma externa</span><a class="text-link" href="https://www.gov.br/pt-br/servicos/inscrever-em-curso-do-caminho-digital" target="_blank" rel="noopener noreferrer">Ver cursos da Escola do Trabalhador <span aria-hidden="true">→</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="verification-section" id="como-verificar">
+      <div class="container verification-grid">
+        <div><p class="eyebrow">SEGURANÇA EM PRIMEIRO LUGAR</p><h2>Verifique antes de se candidatar</h2><p>Este site é um projeto comunitário informativo. Antes de enviar dados pessoais ou realizar uma inscrição, confira as condições e a autenticidade da oportunidade na plataforma de destino.</p></div>
+        <ul class="check-list"><li><span>✓</span> Confira o site e os contatos oficiais.</li><li><span>✓</span> Desconfie de cobranças para participar de processos seletivos.</li><li><span>✓</span> Leia os requisitos, prazos e condições.</li><li><span>✓</span> Não compartilhe senhas nem códigos de segurança.</li></ul>
+      </div>
+    </section>
+
+    <section class="about-section" id="sobre">
+      <div class="container about-box">
+        <div><p class="eyebrow">SOBRE O PROJETO</p><h2>Informação que aproxima pessoas de oportunidades.</h2></div>
+        <p>O Conecta Comunidade é uma proposta de extensão universitária para facilitar a divulgação de empregos e cursos gratuitos. O projeto será apresentado a pessoas da comunidade para avaliar a clareza, a facilidade de uso e sua utilidade. Os cartões indicam plataformas de busca, não anúncios de vagas abertas. Os links levam a serviços externos e a disponibilidade pode mudar.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="#"><span class="brand-mark">CC</span><span>Conecta <strong>Comunidade</strong></span></a><p>Projeto acadêmico de extensão • HTML, CSS e JavaScript</p><a href="#conteudo">Voltar ao topo ↑</a></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
